@@ -206,16 +206,18 @@ if (ready==='yes'){
 	else{
 		console.log('Not quite. First you do 5*2 which is 10. When you add 10 to \'23\'(which is a string) you get 2310. Devide by 10 and it gives you 231');
 	}
+
+	console.log();
+	var endTime=new Date();
+	var time=(endTime-startTime)/1000;
+	if (time<60){
+		console.log('Thanks for taking my quiz! '+name+', you got '+correct+' out of '+totalQuestions+' correct. That is '+((correct/totalQuestions)*100)+'%. And it only took you '+time.toFixed(2)+' seconds!');
+	}
+	else {
+		console.log('Thanks for taking my quiz! '+name+', you got '+correct+' out of '+totalQuestions+' correct. That is '+((correct/totalQuestions)*100)+'%. And it only took you '+(time/60).toFixed(2)+' minutes!');
+	}
 }
 else{
 	console.log();
 	console.log('get out of here')
-}
-console.log();
-var endTime=new Date();
-var time=(endTime-startTime)/1000;
-if (time<60){
-	console.log('Thanks for taking my quiz! '+name+', you got '+correct+' out of '+totalQuestions+' correct. That is '+((correct/totalQuestions)*100)+'%. And it only took you '+time+' seconds!');
-}else {
-	console.log('Thanks for taking my quiz! '+name+', you got '+correct+' out of '+totalQuestions+' correct. That is '+((correct/totalQuestions)*100)+'%. And it only took you '+time/60+' minutes!');
 }
