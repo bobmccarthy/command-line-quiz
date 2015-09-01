@@ -1,0 +1,18 @@
+{
+  "name": "command-line-quiz",
+  "version": "1.0.0",
+  "description": "command quiz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "command",
+    "quiz"
+  ],
+  "author": "bob",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^3.0.0"
+  }
+}
